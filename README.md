@@ -14,6 +14,13 @@ The workflow is divided and documented in the following notebooks:
 - [2-Calibration](notebooks/2-calibration.ipynb): Performs the calibration of the model.
 - [3-Analysis](notebooks/3-analysis.ipynb): Gives an overview of the results of the calibration with help of modelskill.
 
+The calibration is based on the following libraries:
+
+- [Optuna](https://github.com/optuna/optuna) is used as the python framework for the optimization.
+- [Modelskill](https://github.com/DHI/modelskill) is used to evaluate the performance of the model during calibration.
+- [Mikeio](https://github.com/DHI/mikeio) is used to read and write and manipulate MIKE files.
+
+
 ## Model
 
 The model setup is based on the [DHI Southern North Sea WaterBench](https://github.com/DHI/WaterBench-MIKE21HD-SouthernNorthSea) model, which is designed by DHI for educational and research purposes. 
@@ -30,11 +37,9 @@ The altimetry data is based on satellite observations and was downloaded via [DH
 
 ![SNS observations](images/sns_observations.png)
 
-
-
 ## Calibration
 
-In the calibration procedure, a Gaussian Process optimizer is used to minimize the model error, expressed as the Root Mean Square Error (RMSE). Specifically, the Manning roughness coefficient of the seabed is calibrated by dividing the domain into seven distinct zones, each assumed to share similar roughness characteristics. The optimizer adjusts the Manning values for these zones by rerunning the model across multiple trials. Over time, this iterative process results in a converging behavior of the RMSE, indicating improved model performance.
+In the calibration procedure, a Gaussian Process optimizer is used to minimize the model error, expressed as the Root Mean Square Error (RMSE). Specifically, the Manning roughness coefficient of the seabed is calibrated by dividing the domain into seven distinct zones, each assumed to share similar roughness characteristics. The optimizer adjusts the Manning values for these zones by rerunning the model across multiple trials. Over time, this iterative process results in a converging behavior of the RMSE, indicating improved model performance. 
 
 ![SNS convergence](images/sns_convergence.png)
 

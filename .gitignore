@@ -4,7 +4,6 @@
 .venv
 .vscode
 *._spi_
-
 *_trial_*
 
 # Byte-compiled / optimized / DLL files

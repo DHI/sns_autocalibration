@@ -12,7 +12,7 @@ This repository presents a workflow for the automatic calibration of a MIKE 21 m
 The workflow is divided and documented in the following notebooks:
 - [1-Overview](notebooks/1-overview.ipynb): Gives an overview of the model, the observations and the calibration parameters.
 - [2-Calibration](notebooks/2-calibration.ipynb): Performs the calibration of the model.
-- [3-Analysis](notebooks/3-analysis.ipynb): Gives an overview of the results of the calibration with help of modelskill.
+- [3-Analysis](notebooks/3-analysis.ipynb): Gives an overview of the results of the calibration.
 
 The calibration is based on the following libraries:
 

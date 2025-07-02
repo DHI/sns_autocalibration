@@ -52,7 +52,7 @@ git clone https://github.com/DHI/sns_autocalibration
 cd sns_autocalibration
 uv venv
 source activate .venv/Scripts/activate (linux)
-call .venv\Scripts\activate.bat (windows)
+.venv\Scripts\activate.bat (windows)
 uv pip install .
 ```
 

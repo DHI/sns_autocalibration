@@ -49,6 +49,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/yourusername/sns_autocalibration.git
+cd sns_autocalibration
 uv venv
 source activate .venv/Scripts/activate (linux)
 call .venv\Scripts\activate.bat (windows)

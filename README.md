@@ -48,7 +48,7 @@ In the calibration procedure, a Gaussian Process optimizer is used to minimize t
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/sns_autocalibration.git
+git clone https://github.com/DHI/sns_autocalibration
 cd sns_autocalibration
 uv venv
 source activate .venv/Scripts/activate (linux)

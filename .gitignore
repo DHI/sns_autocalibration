@@ -5,6 +5,7 @@
 .vscode
 *._spi_
 *_trial_*
+*SNS-Autocalibration_example*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -51,11 +51,10 @@ Clone the repository and install dependencies:
 git clone https://github.com/yourusername/sns_autocalibration.git
 uv venv
 source activate .venv/Scripts/activate (linux)
-call .venv\Scripts\activate.bat (windows)
+.venv\Scripts\activate.bat (windows)
 uv pip install .
 ```
 
 ## License
 
 This repository is MIT licensed, see [LICENSE](LICENSE) for details.
-

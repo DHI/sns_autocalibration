@@ -19,12 +19,12 @@ dependencies = [
     "modelskill==1.0.0",
     "optuna==4.2.1",
     "ipykernel",
-    "mikeio",
-    "torch",
-    "cartopy",
-    "plotly",
-    "scikit-learn",
-    "nbformat==4.2.0",
+    "jupyterlab==4.4.4",
+    "mikeio==2.6.0",
+    "torch==2.7.1",
+    "cartopy==0.24.1",
+    "plotly==6.2.0",
+    "scikit-learn==1.7.0",
 ]
 
 authors = [

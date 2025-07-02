@@ -1,6 +1,6 @@
 # Autocalibration of a MIKE FM Southern North Sea model
 
-This repository presents a workflow for the automatic calibration of a MIKE 21 model. Specifically, it focuses on calibrating the Manning (Strickler) roughness coefficient by minimizing the Root Mean Square Error (RMSE) of the simulated water levels. For calibration, the model is compared against satellite altimetry observations of the Sentinel mission.
+This repository presents a workflow for the automatic calibration of a MIKE 21 model. Specifically, it focuses on calibrating the Manning (Strickler) roughness coefficient of DHIs Southern North Sea Waterbench model by minimizing the Root Mean Square Error (RMSE) of the simulated water levels. For calibration, the model is compared against satellite altimetry observations of the Sentinel mission.
 
 > ⚠️ **Important Disclaimer**  
 > This model setup is a **highly simplified version** of a hindcast model developed by DHI. The mesh has been reduced from over **150,000** to approximately **8,000 elements**, and input data is coarser in both time and space. As a result, model accuracy is lower — e.g., typical RMSE for water levels increases from ~8 cm to **15–20 cm**.  

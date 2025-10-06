@@ -192,7 +192,7 @@ def find_zones(manning_file):
     return zones
 
 
-def plot_zones(da, savepath):
+def plot_zones(da, savepath=None):
 
     import matplotlib.ticker as mticker
     projPC = ccrs.PlateCarree()

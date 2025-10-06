@@ -12,16 +12,15 @@ packages = ["sns_autocalibration"]
 exclude = ["notebooks", "tests", "images"]
 
 [project]
-# name on PyPI (e.g. pip install sns_autocalibration)
 name = "sns_autocalibration"
 version = "0.0.1"
 dependencies = [
-    "modelskill==1.0.0",
+    "modelskill==1.2.0",
     "optuna==4.2.1",
     "ipykernel",
     "jupyterlab==4.4.4",
     "mikeio==2.6.0",
-    "torch==2.7.1",
+    "torch==2.8.0",
     "cartopy==0.24.1",
     "plotly==6.2.0",
     "scikit-learn==1.7.0",
@@ -32,7 +31,7 @@ authors = [
 ]
 description = "A python repository that showcases an approach to automatically calibrate a DHI waterbench model."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 license = {file = "LICENSE"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -42,39 +41,3 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering",
 ]
-
-[project.optional-dependencies]
-dev = [
-  "build",
-  "pytest",
-  "ruff",
-  "mypy",
-  "mkdocs",
-  "mkdocstrings[python]", 
-  "mkdocs-material"
-]
-
-test= [
-  "pytest",
-  "pytest-cov",
-  "mypy",
-]
-
-notebooks = [
-  "jupyter",
-]
-
-[project.urls]
-"Homepage" = "https://github.com/DHI/sns_autocalibration"
-"Bug Tracker" = "https://github.com/DHI/sns_autocalibration/issues"
-
-
-[tool.ruff]
-# ignore long lines
-lint.ignore = ["E501"]
-
-[tool.mypy]
-python_version = "3.9"
-ignore_missing_imports = true
-warn_unreachable = false
-no_implicit_optional = true
